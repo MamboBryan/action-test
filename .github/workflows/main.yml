@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Test action steps
         id: hello
-        uses: MamboBryan/test-action@v1.2
+        uses: MamboBryan/action-test@v1.2
         with:
           who-to-greet: 'KonaKona'
 
