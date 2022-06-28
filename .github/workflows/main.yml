@@ -1,0 +1,15 @@
+on: [push]
+
+jobs: 
+  test_action_job: 
+    runs-on: ubuntu-latest
+    name: A Test Amid Tests
+    steps:
+      - name: Test action steps
+        id: hello
+        uses: MamboBryan/test-action@v1.2
+        with:
+          who-to-greet: 'KonaKona'
+
+      - name: Get the output time
+        run: echo "The time was ${{steps.hello.outputs.time}}"
