@@ -12,6 +12,9 @@ The time we greeted you.
 
 ## Example usage
 
+```
 uses: actions/test-action@v1.1
 with:
   who-to-greet: 'Marahaba'
+
+```
