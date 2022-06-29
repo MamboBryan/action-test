@@ -1,7 +1,7 @@
 on: [push]
 
-jobs: 
-  test_action_job: 
+jobs:
+  test_action_job:
     runs-on: ubuntu-latest
     name: A Test Amid Tests
     steps:
@@ -9,7 +9,7 @@ jobs:
         id: hello
         uses: MamboBryan/action-test@v1.4
         with:
-          who-to-greet: 'KonaKona'
+          # who-to-greet: "KonaKona"
 
       - name: Get the output time
         run: echo "The time was ${{steps.hello.outputs.time}}"
