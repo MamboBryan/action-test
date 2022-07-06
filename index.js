@@ -7,7 +7,8 @@ try {
   const payload = JSON.stringify(github.context.payload, undefined, 2);
 
   // log inputs
-  console.log(`Hello ${name}!`);
+  // console.log(`Hello ${name}!`);
+  console.log(`Hello World!`);
   console.log(`This event payload ${payload}`);
 
   // get outputs
