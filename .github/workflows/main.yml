@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A Test Amid Tests
     steps:
-      - name: Test action steps
+      - name: Hello ${name} action
         id: hello
         uses: MamboBryan/action-test@v1.4
         with:
-          who-to-greet: KonaKona
+          who-to-greet: "KonaKona"
 
       - name: Get the output time
         run: echo "The time was ${{steps.hello.outputs.time}}"
